@@ -4,7 +4,8 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-PROJECT='luma'
+
+PROJECT='pm2'
 LOCALE='sv_SE'
 
 # install grunt locally
@@ -14,7 +15,7 @@ fi
 
 echo -e "${GREEN} --- Start deploying ${PROJECT} --- ${NC}\n"
 
-if ! grep --quiet "${PROJECT}:" dev/tools/grunt/configs/themes.js ; then
+if ! grep --quiet "blank:" dev/tools/grunt/configs/themes.js ; then
     echo -e "${RED}!!! Warning: the grunt config is missing. Less compilation wouldn't work. !!!${NC}\n";
 fi
 
@@ -54,8 +55,8 @@ if [[ -n "$1" ]] && [[ "$1" == "content" ]]; then
 
     bin/magento setup:static-content:deploy ${LOCALE}
 
-    grunt exec:${PROJECT}
-    grunt less:${PROJECT}
+    grunt exec:blank
+    grunt less:blank
 fi
 
 sudo chown -R :www-data .
