@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Grom Olga <GromOlga.work@gmail.com>
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Grom_Theme/css/source/fontawesome.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Cms\Block\Block" name="features-list" after="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">features-list</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Grom Olga <GromOlga.work@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <up_button>
+            <general>
+                <enabled>1</enabled>
+            </general>
+            <design>
+                <bgc>#e4bb47</bgc>
+            </design>
+        </up_button>
+    </default>
+</config>

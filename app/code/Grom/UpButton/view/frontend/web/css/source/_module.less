@@ -1,0 +1,58 @@
+/**
+ * @author Grom Olga <GromOlga.work@gmail.com>
+ */
+
+//
+//  Variables
+//  _____________________________________________
+
+@grom-up-button_position-right: 30px;
+@grom-up-button_position-bottom: @grom-up-button_position-right;
+@grom-up-button_size: 50px;
+@grom-up-button_border-radius: 50%;
+
+//
+//  Up button
+//  ---------------------------------------------
+
+.up-btn {
+  position: fixed;
+  height: @grom-up-button_size;
+  width: @grom-up-button_size;
+  right: @grom-up-button_position-right;
+  bottom: @grom-up-button_position-bottom;
+  border-radius: @grom-up-button_border-radius;
+  background-color: #e4bb47;
+  transition: .3s;
+}
+.up-btn:before,
+.up-btn:after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+}
+.up-btn:before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: calc(100% - 60px);
+  width: 1px;
+}
+.up-btn:after {
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  height: 17%;
+  width: 17%;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  background-color: transparent;
+}
+.up-btn:hover {
+  background-color: #d8a820;
+  transition: .3s;
+}
+.up-btn_hide {
+  display: none;
+  opacity: 0;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Grom Olga <GromOlga.work@gmail.com>
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="page.wrapper">
+            <block name="grom_up_button"
+                   template="Grom_UpButton::up_button.phtml"
+                   ifconfig="up_button/general/enabled"
+                   after="-">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Grom\UpButton\Block\ViewModel\UpButton</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
