@@ -1,6 +1,29 @@
-.features-list {
+.flex-list {
   display: flex;
+  padding: 0;
 }
-.heatures-item {
-
+.flex-item {
+  list-style-type: none;
+}
+.features-list {
+  margin: -5px -15px;
+}
+.features-item {
+  margin: 5px 15px;
+  .fas {
+    margin-right: 5px;
+    font-size: 30px;
+    color: #6c4c40;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    transition: color .3s;
+    &:hover {
+      color: #6c4c40;
+      transition: color .3s;
+    }
+  }
 }

@@ -9,6 +9,19 @@ define([
     'use strict';
 
     return function (config, element) {
-        $(element).owlCarousel(config)
+        $(element).owlCarousel({
+            items: 1,
+            loop: true,
+            responsive : {
+                0 : {
+                    dots: false,
+                    nav: false,
+                },
+                767 : {
+                    dots: true,
+                    nav: true
+                }
+            }
+        })
     }
 });

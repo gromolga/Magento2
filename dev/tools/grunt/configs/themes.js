@@ -41,6 +41,16 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    grom: {
+        area: 'frontend',
+        name: 'Grom/Base',
+        locale: 'sv_SE',
+        files: [
+            'css/styles-m',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
     backend: {
         area: 'adminhtml',
         name: 'Magento/backend',
