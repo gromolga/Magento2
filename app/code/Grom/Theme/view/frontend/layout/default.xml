@@ -16,6 +16,7 @@
                     <argument name="block_id" xsi:type="string">features-list</argument>
                 </arguments>
             </block>
+            <!--<block name="contact-forms" before="-" template="Grom_Theme::contact_forms/default.phtml"/>-->
         </referenceContainer>
     </body>
 </page>
