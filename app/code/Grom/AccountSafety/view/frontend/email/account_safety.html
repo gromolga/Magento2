@@ -1,0 +1,33 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<!--@subject {{trans "Return form"}} @-->
+<!--@vars {
+"var data.comment":"Comment",
+"var data.email":"Sender Email",
+"var data.name":"Sender Name",
+"var data.telephone":"Sender Telephone"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<table class="g-table__base">
+    <tr class="g-table__border-bottom">
+        <td class="g-table__padding">
+            <h1>{{trans "Confirm your email address"}}</h1></br>
+            <a href="#">gromolga.work@gmail.com</a>
+        </td>
+    </tr>
+    <tr>
+        <td class="g-table__padding">
+            <span>{{trans "Your Google Account has just been logged on to a new Linux device. We want to make sure that it was you."}}</span></br>
+            <a class="g-button g-button__primary" href="#">{{trans "View actions"}}</a>
+        </td>
+    </tr>
+</table>
+
+
+{{template config_path="design/email/footer_template"}}

@@ -14,224 +14,205 @@
 
 {{template config_path="design/email/header_template"}}
 
-<table style="border:1px solid red">
-    <tr>
-        <td colspan="2">
-            <table style="padding:25px 30px 32px 27px;vertical-align:top;border-left:1px solid #cccccc;border-bottom:1px solid #cccccc;border-right:1px solid #cccccc;border-top:3px solid #74d46b;">
+<table class="g-table__base">
+    <tr class="g-table__border-bottom">
+        <td colspan="2" class="g-table__padding">
+            <table>
                 <tr>
-                    <th colspan="2"><h1 style="font-size:28px">Подтвердите адрес электронной почты</h1></th>
+                    <th colspan="2"><h1 class="g-table__header">{{trans "Confirm your email address"}}</h1></th>
                 </tr>
                 <tr>
-                    <td colspan="2">Для вашего email <a href="#" style="color: #15c; font-weight: bold">gromolga.work@gmail.com </a>был
-                        осуществлен запрос на подтверждение адреса электронной почты.
-                        Для того чтобы подтвердить адрес электронной почты необходимо перейти по <a href="#"
-                                                                                                    style="color: #3e77aa">ссылке </a>или
-                        по кнопке "Подтвердить email".
+                    <td colspan="2" class="g-table__text-center">For your email <a href="#">gromolga.work@gmail.com </a>
+                        a request was made to confirm the e-mail address.
+                        To verify your email address you must go to <a href="#">link </a> or by clicking the
+                        "Confirm email" button.
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="submit">Подтвердить email</td>
+                    <td><a class="g-button g-button__danger" href="#">{{trans "Confirm email"}}</a></td>
                 </tr>
                 <tr>
-                    <td>Если вы не запрашивали данного подтверждения просим проигнорировать это сообщение или обратиться
-                        в наш контакт-центр по телефону (044) 537-02-22, (044) 503-80-80 или на email
+                    <td>If you did not request this confirmation, please ignore this message or contact to our contact
+                        center by phone (044) 537-02-22, (044) 503-80-80 or by email
                         <a href="#">sales@rozetka.com.ua</a></td>
                 </tr>
             </table>
         </td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <table style="padding:23px 30px 23px 23px;vertical-align:top;border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-bottom:3px solid #74d46b;width:100%">
+    <tr class="g-table__border-bottom">
+        <td colspan="2" class="g-table__padding">
+            <table>
                 <tr>
                     <td width="50%">
-                        <table >
+                        <table class="g-table__margin">
                             <tr>
                                 <td>
-                                    <img src="https://ci4.googleusercontent.com/proxy/8uwK6VvFcDFFwNtg4lRGVbC1YxPpZEqn9fNUIoB6zl_3V_CjBvGwxaAqiPQwm6tfLqCyg11n9vByN5n4a6anaCNPo7bK9QZ6Uq3N3a4=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-note.png"
-                                         alt="Ноутбуки, планшеты и ПК" title="Ноутбуки, планшеты и ПК" width="23"
-                                         height="19" style="border-width:0;vertical-align:bottom" class="CToWUd">
+                                    <img src="{{view url='Grom_EmailConfirm/images/notebook.png'}}" height="20" alt="{{trans 'Laptops, tablets and PCs'}}" />
                                 </td>
                                 <td>
-                                    <a href="#">Ноутбуки, планшеты и ПК</a>
+                                    <a href="#">Laptops, tablets and PCs</a>
                                 </td>
                             </tr>
                         </table>
-                        <table>
+                        <table class="g-table__margin">
                             <tr>
-                                <td><img
-                                        src="https://ci5.googleusercontent.com/proxy/G2Utn8x-OiJCuKdkQY1oZ3lHHHBSoZIEsV57umzuEtcaLGykGgl6dAP1LNEzTSGyb-RagguJD15PM_3zJnVlGMbbdXd_FlFuqH2o2MU_=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-smart.png"
-                                        alt="Телефоны, MP3" title="Телефоны, MP3" width="18" height="21"
-                                        style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                                 <td>
-                                    <a href="#">Телефоны, MP3</a>
+                                    <img src="{{view url='Grom_EmailConfirm/images/phone.png'}}" height="20" alt="{{trans 'Phones, MP3'}}" />
+                                </td>
+                                <td>
+                                    <a href="#">Phones, MP3</a>
                                 </td>
                             </tr>
                         </table>
-                        <table>
+                        <table class="g-table__margin">
                             <tr>
-                                <td><img
-                                        src="https://ci3.googleusercontent.com/proxy/OMS1hTGgk2sN5S_mWibRrMoyLnFXmyiUq_YBqd6ws23MxmyJcIl2bC3ot7jUJmIHGXowErDWKDfCaN3EtJP5fIuB2E9_thOf2lIl=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-tv.png"
-                                        alt="ТВ, Аудио, Видео, Фото" title="ТВ, Аудио, Видео, Фото" width="19" height="21"
-                                        style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                                 <td>
-                                    <a href="#">ТВ, Аудио, Видео, Фото</a>
+                                    <img src="{{view url='Grom_EmailConfirm/images/tv.png'}}" height="20" alt="{{trans 'TV, Audio, Video, Photo'}}" />
+                                </td>
+                                <td>
+                                    <a href="#">TV, Audio, Video, Photo</a>
                                 </td>
                             </tr>
                         </table>
-                        <table>
+                        <table class="g-table__margin">
                             <tr>
-                                <td><img
-                                        src="https://ci6.googleusercontent.com/proxy/L3OAVA2vD5EKkZVl9XZCVhigwAlizi8LO7esRqvAiKV7bQcjH-v4yc33U3E1O175gccBxnTHeA5CACNySExTEAjbbNl5PkdYT0Yl=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-bt.png"
-                                        alt="Бытовая техника и интерьер" title="Бытовая техника и интерьер" width="18"
-                                        height="21" style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                                 <td>
-                                    <a href="#">Бытовая техника и интерьер</a>
+                                    <img src="{{view url='Grom_EmailConfirm/images/appliances.png'}}" height="20" alt="{{trans 'Household appliances and interior'}}" />
+                                </td>
+                                <td>
+                                    <a href="#">Household appliances and interior</a>
                                 </td>
                             </tr>
                         </table>
-                        <table>
+                        <table class="g-table__margin">
                             <tr>
-                                <td><img
-                                        src="https://ci3.googleusercontent.com/proxy/LsXOX19MoJGk35EYhW9HgjTqmsLgW3I8Zjg8DAbOeAgH2PKZB7m2O8DyVdqh_FSDstEZ613TJhWVXdPbbnMNVFKEulEBWMA9ZfuUIbuC=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-sport.png"
-                                        alt="Активный отдых и туризм" title="Активный отдых и туризм" width="20" height="18"
-                                        style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                                 <td>
-                                    <a href="#">Активный отдых и туризм</a>
+                                    <img src="{{view url='Grom_EmailConfirm/images/tourism.png'}}" height="20" alt="{{trans 'Active rest and tourism'}}" />
+                                </td>
+                                <td>
+                                    <a href="#">Active rest and tourism</a>
                                 </td>
                             </tr>
                         </table>
-                        <table>
+                        <table class="g-table__margin">
                             <tr>
-                                <td><img
-                                        src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                        alt="Детский мир" title="Детский мир" width="18" height="21"
-                                        style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                                 <td>
-                                    <a href="#">Детский мир</a>
+                                    <img src="{{view url='Grom_EmailConfirm/images/bear.png'}}" height="20" alt="{{trans 'Child&rsquo;s world'}}" />
+                                </td>
+                                <td>
+                                    <a href="#">Child's world</a>
                                 </td>
                             </tr>
                         </table>
-                        <table>
+                        <table class="g-table__margin">
                             <tr>
-                                <td><img
-                                        src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                        alt="Детский мир" title="Детский мир" width="18" height="21"
-                                        style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                                 <td>
-                                    <a href="#">Товары для дома</a>
+                                    <img src="{{view url='Grom_EmailConfirm/images/arm-chair.png'}}" height="20" alt="{{trans 'Household products'}}" />
+                                </td>
+                                <td>
+                                    <a href="#">Household products</a>
                                 </td>
                             </tr>
                         </table>
-                        <table>
+                        <table class="g-table__margin">
                             <tr>
-                                <td><img
-                                        src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                        alt="Детский мир" title="Детский мир" width="18" height="21"
-                                        style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                                 <td>
-                                    <a href="#">Дача, сад, огород</a>
+                                    <img src="{{view url='Grom_EmailConfirm/images/house.png'}}" height="20" alt="{{trans 'Summer house, garden, kitchen garden'}}" />
+                                </td>
+                                <td>
+                                    <a href="#">Summer house, garden, kitchen garden</a>
                                 </td>
                             </tr>
                         </table>
-                        <table>
+                        <table class="g-table__margin">
                             <tr>
-                                <td><img
-                                        src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                        alt="Детский мир" title="Детский мир" width="18" height="21"
-                                        style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                                 <td>
-                                    <a href="#">Инструменты и оборудование</a>
+                                    <img src="{{view url='Grom_EmailConfirm/images/instruments.png'}}" height="20" alt="{{trans 'Tools and equipment'}}" />
+                                </td>
+                                <td>
+                                    <a href="#">Tools and equipment</a>
                                 </td>
                             </tr>
                         </table>
                     </td>
                     <td width="50%">
-                    <table>
+                    <table class="g-table__margin">
                         <tr>
-                            <td><img
-                                    src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                    alt="Детский мир" title="Детский мир" width="18" height="21"
-                                    style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                             <td>
-                                <a href="#">Автотовары</a>
+                                <img src="{{view url='Grom_EmailConfirm/images/car.png'}}" height="20" alt="{{trans 'Car goods'}}" />
+                            </td>
+                            <td>
+                                <a href="#">Car goods</a>
                             </td>
                         </tr>
                     </table>
-                    <table>
+                    <table class="g-table__margin">
                         <tr>
-                            <td><img
-                                    src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                    alt="Детский мир" title="Детский мир" width="18" height="21"
-                                    style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                             <td>
-                                <a href="#">Музыкальные инструменты</a>
+                                <img src="{{view url='Grom_EmailConfirm/images/instruments.png'}}" height="20" alt="{{trans 'Musical instruments'}}" />
+                            </td>
+                            <td>
+                                <a href="#">Musical instruments</a>
                             </td>
                         </tr>
                     </table>
-                    <table>
+                    <table class="g-table__margin">
                         <tr>
-                            <td><img
-                                    src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                    alt="Детский мир" title="Детский мир" width="18" height="21"
-                                    style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                             <td>
-                                <a href="#">Авиа и ЖД билеты</a>
+                                <img src="{{view url='Grom_EmailConfirm/images/tickets.png'}}" height="20" alt="{{trans 'Air and railway tickets'}}" />
+                            </td>
+                            <td>
+                                <a href="#">Air and railway tickets</a>
                             </td>
                         </tr>
                     </table>
-                    <table>
+                    <table class="g-table__margin">
                         <tr>
-                            <td><img
-                                    src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                    alt="Детский мир" title="Детский мир" width="18" height="21"
-                                    style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                             <td>
-                                <a href="#">Одежда, обувь и аксессуары</a>
+                                <img src="{{view url='Grom_EmailConfirm/images/clothes.png'}}" height="20" alt="{{trans 'Clothing, Shoes & Accessories'}}" />
+                            </td>
+                            <td>
+                                <a href="#">Clothing, Shoes & Accessories</a>
                             </td>
                         </tr>
                     </table>
-                    <table>
+                    <table class="g-table__margin">
                         <tr>
-                            <td><img
-                                    src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                    alt="Детский мир" title="Детский мир" width="18" height="21"
-                                    style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                             <td>
-                                <a href="#">Ювелирные украшения</a>
+                                <img src="{{view url='Grom_EmailConfirm/images/jewelry.png'}}" height="20" alt="{{trans 'Jewelry'}}" />
+                            </td>
+                            <td>
+                                <a href="#">Jewelry</a>
                             </td>
                         </tr>
                     </table>
-                    <table>
+                    <table class="g-table__margin">
                         <tr>
-                            <td><img
-                                    src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                    alt="Детский мир" title="Детский мир" width="18" height="21"
-                                    style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                             <td>
-                                <a href="#">Косметика и парфюмерия</a>
+                                <img src="{{view url='Grom_EmailConfirm/images/cosmetics.png'}}" height="20" alt="{{trans 'Cosmetics and perfumery'}}" />
+                            </td>
+                            <td>
+                                <a href="#">Cosmetics and perfumery</a>
                             </td>
                         </tr>
                     </table>
-                    <table>
+                    <table class="g-table__margin">
                         <tr>
-                            <td><img
-                                    src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                    alt="Детский мир" title="Детский мир" width="18" height="21"
-                                    style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                             <td>
-                                <a href="#">Офис и школа</a>
+                                <img src="{{view url='Grom_EmailConfirm/images/office.png'}}" height="20" alt="{{trans 'Office and school'}}" />
+                            </td>
+                            <td>
+                                <a href="#">Office and school</a>
                             </td>
                         </tr>
                     </table>
-                    <table>
+                    <table class="g-table__margin">
                         <tr>
-                            <td><img
-                                    src="https://ci4.googleusercontent.com/proxy/i45-e-DxJbHzmPwh7sWzyXIufoJMMr4Effjgg2Rfg0nosBlGavakl7eRvJ1_NZ2kMAXzbRzNNwY3A2MvUvdqgdV0RnuQS3xowww2nnE=s0-d-e1-ft#https://i.rozetka.ua/design/letters/neworder/f-toys.png"
-                                    alt="Детский мир" title="Детский мир" width="18" height="21"
-                                    style="border-width:0;vertical-align:bottom" class="CToWUd"></td>
                             <td>
-                                <a href="#">Зоотовары</a>
+                                <img src="{{view url='Grom_EmailConfirm/images/pet.png'}}" height="20" alt="{{trans 'Pet supplies'}}" />
+                            </td>
+                            <td>
+                                <a href="#">Pet supplies</a>
                             </td>
                         </tr>
                     </table>
@@ -241,17 +222,26 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <span>Интернет-магазин Rozetka.ua</span></br>
-            <a href="#">Киев, пр. С. Бандеры, 6</a>
+        <td class="g-table__padding g-table__border-right">
+            <span>{{trans "Internet-shop Rozetka.ua"}}</span></br>
+            <a href="#">Kiev, Bandery, 6</a>
         </td>
-        <td>
+        <td class="g-table__padding">
             <a href="#">(044) 537-02-22</a></br>
             <a href="#">0 (800) 303-344</a></br>
             <a href="#">(044) 503-80-80</a>
         </td>
     </tr>
 </table>
+
+
+<!--@styles
+.g-button__danger:hover,
+.g-button__danger:active,
+.g-button__danger:visited {
+  color: lime !important;
+}
+@-->
 
 
 {{template config_path="design/email/footer_template"}}

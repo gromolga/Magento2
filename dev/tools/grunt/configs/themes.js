@@ -41,13 +41,25 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    grom_en: {
+        area: 'frontend',
+        name: 'Grom/Base',
+        locale: 'en_US',
+        files: [
+            'css/email',
+            'css/email-inline'
+        ],
+        dsl: 'less'
+    },
     grom: {
         area: 'frontend',
         name: 'Grom/Base',
-        locale: 'sv_SE',
+        locale: 'ru_RU',
         files: [
             'css/styles-m',
-            'css/styles-l'
+            'css/styles-l',
+            'css/email',
+            'css/email-inline'
         ],
         dsl: 'less'
     },

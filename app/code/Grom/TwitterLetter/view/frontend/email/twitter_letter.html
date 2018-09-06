@@ -1,0 +1,49 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<!--@subject {{trans "Return form"}} @-->
+<!--@vars {
+"var data.comment":"Comment",
+"var data.email":"Sender Email",
+"var data.name":"Sender Name",
+"var data.telephone":"Sender Telephone"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<table class="g-table__base">
+    <tr>
+        <td>
+            <table class="">
+                <tr>
+                    <th class="g-table__padding g-table__border-bottom">
+                        <h1 class="g-table__header">{{trans "%name reply:" name="Gabriel Simas Bolsonaro"}}</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="g-table__padding">
+                        <img src="https://ci3.googleusercontent.com/proxy/Xyd9nXWIf1icaxem1jq0VFREiBdLyp4SurpgLzTKGEFehEWsIKwpxiQ4Nl_9HGVsLkf-Rxsd_72xgAhEZeq-yakK0gRsmp7fwz0eOAHYcdUlSgsNThWo_A7mspYpQuVG84MvpvAg=s0-d-e1-ft#https://pbs.twimg.com/news_img/1036403077467840512/k5AjkmWo?format=jpg&amp;name=orig" width="400">
+                    </td>
+                <tr>
+                    <td class="g-table__padding">
+                        Museu Nacional guarda acervo de mais de 20 milhões de itens
+                    </td>
+                </tr>
+                <tr>
+                    <td class="g-table__padding">
+                        Já foi residência oficial da família real e é a primeira instituição científica da história do país.
+                    </td>
+                    <td class="g-table__padding">
+                        <a class="g-table__link" href="#">{{trans "Know more in Twitter"}}</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+{{template config_path="design/email/footer_template"}}
