@@ -1,0 +1,48 @@
+.icon {
+  &__bg-burger {
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 22px;
+    background-color: #fff;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      background-color: #fff;
+    }
+    &:before {
+      left: 0;
+      right: 2px;
+      top: -5px;
+    }
+    &:after {
+      left: 0;
+      right: -2px;
+      bottom: -5px;
+    }
+  }
+  &__bg-filters,
+  &__bg-cart {
+    font-size: 22px;
+    color: #fff;
+  }
+  &__bg-cart:before {
+    font-family: Font Awesome\ 5 Free;
+    content: "\f07a";
+    font-weight: 900;
+  }
+  &__bg-filters:before {
+    content: "\f274";
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+  }
+  &__logo {
+    display: block;
+    height: 50px;
+    width: 80px;
+    background: url(https://www.zolotoyvek.ua/skin/frontend/zvek/zvek/images/logo-mobile.png) center no-repeat;
+    background-size: contain;
+  }
+}

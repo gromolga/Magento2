@@ -7,6 +7,7 @@ return [
         'Magento_Backend' => 1,
         'Grom_Theme' => 1,
         'Grom_EmailConfirm' => 1,
+        'Grom_MegaMenu' => 1,
         'Grom_Slider' => 1,
         'Grom_AccountSafety' => 1,
         'Grom_TwitterLetter' => 1,

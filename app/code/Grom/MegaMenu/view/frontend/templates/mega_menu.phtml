@@ -1,0 +1,204 @@
+<?php
+/**
+ * @author Grom Olga <GromOlga.work@gmail.com>
+ */
+?>
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ */
+?>
+<div class="">
+    <div class="container navbar">
+        <div class="navbar_item navbar_item__bg-darkness" data-action="show-mega-menu_holder">
+            <div class="navbar_item__uppercase">
+                <a class="navbar_item-link" href="#">
+                    <span class="icon icon__bg-burger"></span>
+                    <span>Каталог товаров</span>
+                </a>
+            </div>
+        </div>
+        <div class="navbar_item navbar_item__large">
+            <div class="navbar_item-search-holder">
+                <input class="navbar_item-search-input" type="text" placeholder="Поиск товаров">
+            </div>
+        </div>
+        <div class="navbar_item navbar_item__small">
+            <a class="navbar_item-link" href="#">
+                <span class="icon icon__bg-filters"></span>
+                <span>Подбор товаров</span>
+            </a>
+        </div>
+        <div class="navbar_item navbar_item__bg-darkness navbar_item__small">
+            <a class="navbar_item-link" href="#">
+                <span class="icon icon__bg-cart"></span>
+                <span>Корзина пуста</span>
+            </a>
+        </div>
+    </div>
+    <div class="mobile-nav">
+        <div class="container">
+            <div class="navbar_item-icon-holder mobile-nav_icon">
+                <a class="navbar_item-link" href="#">
+                    <span class="icon icon__bg-burger"></span>
+                </a>
+            </div>
+            <div class="navbar_item-icon-holder mobile-nav_icon">
+                <a href="#" class="navbar_item-icon-link">
+                    <span class="icon icon__logo"></span>
+                </a>
+            </div>
+            <div class="navbar_item-icon-holder mobile-nav_icon">
+                <a href="#" class="navbar_item-icon-link">
+                    <span class="icon icon__bg-cart"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mega-menu" data-mage-init='{"megaMenu": {"home": <?php echo $block->getShowVertical() ? '1' : '0' ?>}}'>
+        <div class="mega-menu_holder mega-menu_holder__show-horisontal" <?php echo !$block->getShowVertical() ? 'style="display:none"' : '' ?>>
+            <ul class="mega-menu-grid">
+                <li class="mega-menu_item mega-menu_item__top-level">
+                    <a class="mega-menu-link mega-menu-link__top-level" data-action="show-dropbox" href="#">Кольца</a>
+                    <div class="mega-menu_dropbox">
+<!--                        <ul>-->
+<!--                            <li class="mega-menu-link mega-menu-link__insert-level">-->
+<!--                                <a href="#">Обручальные кольца</a>-->
+<!--                            </li>-->
+<!--                            <li class="mega-menu-link mega-menu-link__insert-level">-->
+<!--                                <a href="#">Помолвочные</a>-->
+<!--                            </li>-->
+<!--                            <li class="mega-menu-link mega-menu-link__insert-level">-->
+<!--                                <a href="#">С полудрагоценными камнями</a>-->
+<!--                            </li>-->
+<!--                            <li class="mega-menu-link mega-menu-link__insert-level">-->
+<!--                                <a href="#">С бриллиантами</a>-->
+<!--                            </li>-->
+<!--                            <li class="mega-menu-link mega-menu-link__insert-level">-->
+<!--                                <a href="#">С фианитами</a>-->
+<!--                            </li>-->
+<!--                            <li class="mega-menu-link mega-menu-link__insert-level">-->
+<!--                                <a href="#">Эксклюзивные</a>-->
+<!--                            </li>-->
+<!--                            <li class="mega-menu-link mega-menu-link__insert-level">-->
+<!--                                <a href="#">С жемчугом</a>-->
+<!--                            </li>-->
+<!--                            <li class="mega-menu-link mega-menu-link__insert-level">-->
+<!--                                <a href="#">Фаланговые</a>-->
+<!--                            </li>-->
+<!--                            <li class="mega-menu-link mega-menu-link__insert-level">-->
+<!--                                <a href="#">Без вставки</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+                    </div>
+                </li>
+                <li class="mega-menu_item mega-menu_item__top-level">
+                    <a class="mega-menu-link mega-menu-link__top-level" href="#">Серьги</a>
+                    <div class="mega-menu_dropbox">
+                        <div class="mega-menu_banner">
+                            <img class="mega-menu_banner-img" src="https://www.zolotoyvek.ua/media/banner/image/cache/294x508-frame-255-255-255-zoom/s/e/sergi_3.jpg" alt="">
+                        </div>
+                        <ul class="mega-menu_list">
+                            <li class="mega-menu_dropbox-item">
+                                <a href="#" class="mega-menu-link mega-menu-link__insert-level">
+                                    <img class="mega-menu-link_thumbnail" src="https://www.zolotoyvek.ua/media/catalog/product/cache/cat_resized/142x142540007-_-__1.jpg" alt="">
+                                    <span class="mega-menu-link_thumbnail-title">С полудрагоценными камнями</span>
+                                </a>
+                            </li>
+                            <li class="mega-menu_dropbox-item">
+                                <a href="#" class="mega-menu-link mega-menu-link__insert-level">
+                                    <img class="mega-menu-link_thumbnail" src="https://www.zolotoyvek.ua/media/catalog/product/cache/cat_resized/142x14253779-2__1.jpg" alt="">
+                                    <span class="mega-menu-link_thumbnail-title">С бриллиантами</span>
+                                </a>
+                            </li>
+                            <li class="mega-menu_dropbox-item">
+                                <a href="#" class="mega-menu-link mega-menu-link__insert-level">
+                                    <img class="mega-menu-link_thumbnail" src="https://www.zolotoyvek.ua/media/catalog/product/cache/cat_resized/142x14221673.jpg" alt="">
+                                    <span class="mega-menu-link_thumbnail-title">С фианитами</span>
+                                </a>
+                            </li>
+                            <li class="mega-menu_dropbox-item">
+                                <a href="#" class="mega-menu-link mega-menu-link__insert-level">
+                                    <img class="mega-menu-link_thumbnail" src="https://www.zolotoyvek.ua/media/catalog/product/cache/cat_resized/142x14221722_1.jpg" alt="">
+                                    <span class="mega-menu-link_thumbnail-title">Эксклюзивные</span>
+                                </a>
+                            </li>
+                            <li class="mega-menu_dropbox-item">
+                                <a href="#" class="mega-menu-link mega-menu-link__insert-level">
+                                    <img class="mega-menu-link_thumbnail" src="https://www.zolotoyvek.ua/media/catalog/product/cache/cat_resized/142x14221612_1.jpg" alt="">
+                                    <span class="mega-menu-link_thumbnail-title">С жемчугом</span>
+                                </a>
+                            </li>
+                            <li class="mega-menu_dropbox-item">
+                                <a href="#" class="mega-menu-link mega-menu-link__insert-level">
+                                    <img class="mega-menu-link_thumbnail" src="https://www.zolotoyvek.ua/media/catalog/product/cache/cat_resized/142x14202882_1.jpg" alt="">
+                                    <span class="mega-menu-link_thumbnail-title">Без вставки</span>
+                                </a>
+                            </li>
+                            <li class="mega-menu_dropbox-item">
+                                <a href="#" class="mega-menu-link mega-menu-link__insert-level">
+                                    <img class="mega-menu-link_thumbnail" src="https://www.zolotoyvek.ua/media/catalog/product/cache/cat_resized/142x14253705-0.9_-__1.jpg" alt="">
+                                    <span class="mega-menu-link_thumbnail-title">Серьги-пуссеты</span>
+                                </a>
+                            </li>
+                            <li class="mega-menu_dropbox-item">
+                                <a href="#" class="mega-menu-link mega-menu-link__insert-level">
+                                    <img class="mega-menu-link_thumbnail" src="https://www.zolotoyvek.ua/media/catalog/product/cache/cat_resized/142x14220860-2-1200_1.jpg" alt="">
+                                    <span class="mega-menu-link_thumbnail-title">Серьги-конго</span>
+                                </a>
+                            </li>
+                            <li class="mega-menu_dropbox-item">
+                                <a href="#" class="mega-menu-link mega-menu-link__insert-level">
+                                    <img class="mega-menu-link_thumbnail" src="https://www.zolotoyvek.ua/media/catalog/product/cache/cat_resized/142x14221609-01-1-255_2.jpg" alt="">
+                                    <span class="mega-menu-link_thumbnail-title">Серьги-подвески</span>
+                                </a>
+                            </li>
+                            <li class="mega-menu_dropbox-item">
+                                <a href="#" class="mega-menu-link mega-menu-link__insert-level">
+                                    <img class="mega-menu-link_thumbnail" src="https://www.zolotoyvek.ua/media/catalog/product/cache/cat_resized/142x14221734_1.jpg" alt="">
+                                    <span class="mega-menu-link_thumbnail-title">С замком-петелькой</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mega-menu_item mega-menu_item__top-level">
+                    <a class="mega-menu-link mega-menu-link__top-level" href="#">Подвески</a>
+                </li>
+                <li class="mega-menu_item mega-menu_item__top-level">
+                    <a class="mega-menu-link mega-menu-link__top-level" href="#">Цепочки</a>
+                </li>
+                <li class="mega-menu_item mega-menu_item__top-level">
+                    <a class="mega-menu-link mega-menu-link__top-level" href="#">Бриллианты</a>
+                </li>
+                <li class="mega-menu_item mega-menu_item__top-level">
+                    <a class="mega-menu-link mega-menu-link__top-level" href="#">Украшения с камнями</a>
+                </li>
+                <li class="mega-menu_item mega-menu_item__top-level">
+                    <a class="mega-menu-link mega-menu-link__top-level" href="#">Серебро</a>
+                </li>
+                <li class="mega-menu_item mega-menu_item__top-level">
+                    <a class="mega-menu-link mega-menu-link__top-level" href="#">Свадьба</a>
+                </li>
+                <li class="mega-menu_item mega-menu_item__top-level mega-menu-link__premium">
+                    <a class="mega-menu-link mega-menu-link__top-level" href="#">DIAMONDS - премиум-бренд</a>
+                </li>
+                <li class="mega-menu_item mega-menu_item__top-level">
+                    <a class="mega-menu-link mega-menu-link__top-level" href="#">Каталог</a>
+                </li>
+                <li class="mega-menu_item mega-menu_item__top-level">
+                    <a class="mega-menu-link mega-menu-link__top-level" href="#">Коллекции</a>
+                </li>
+                <li class="mega-menu_item mega-menu_item__top-level">
+                    <a class="mega-menu-link mega-menu-link__top-level" href="#">Комплекты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+

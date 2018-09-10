@@ -1,0 +1,43 @@
+.mega-menu-link {
+  color: @main-text-color;
+  &__top-level {
+    display: block;
+    margin: 0;
+    padding: 10px 35px;
+    background-color: @bg-light;
+    transition: .3s;
+    &:hover {
+      background-color: #fff;
+      transition: .3s;
+      text-decoration: none;
+    }
+  }
+  &__insert-level {
+    position: relative;
+    display: block;
+    height: 70px;
+    background-color: @bg-light;
+    &:hover {
+      background-color: #fff;
+      transition: .3s;
+      text-decoration: none;
+    }
+    > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  &_thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+  }
+  &_thumbnail-title {
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
