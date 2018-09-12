@@ -6,7 +6,8 @@
 var config = {
     map: {
         '*': {
-            megaMenu: 'Grom_MegaMenu/js/megaMenu'
+            megaMenu: 'Grom_MegaMenu/js/megaMenu',
+            mobileNav: 'Grom_MegaMenu/js/mobileNav'
         }
     }
 };

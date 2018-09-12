@@ -10,18 +10,12 @@ define([
     return function (config, element) {
         if (!config.home) {
             $('[data-action=show-mega-menu_holder]').hover(function () {
-                $(element).find('.mega-menu_holder').slideDown();
-                // $(element).find('.mega-menu_holder').addClass('mega-menu_holder__show-vertical');
-                // $(element).find('.mega-menu_holder').addClass('slideDown');
-                // $(element).find('.mega-menu_holder').removeClass('slideUp');
+                $(element).find('.mega-menu_holder').removeClass('mega-menu_holder-page__slideUp');
+                $(element).find('.mega-menu_holder').addClass('mega-menu_holder-page__slideDown');
             }, function () {
-                $(element).find('.mega-menu_holder').slideUp();
-                // $(element).find('.mega-menu_holder').removeClass('mega-menu_holder__show-vertical');
-                // $(element).find('.mega-menu_holder').removeClass('slideDown');
-                // $(element).find('.mega-menu_holder').addClass('slideUp');
+                $(element).find('.mega-menu_holder').removeClass('mega-menu_holder-page__slideDown');
+                $(element).find('.mega-menu_holder').addClass('mega-menu_holder-page__slideUp');
             });
         }
-
-
     }
 });

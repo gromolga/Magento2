@@ -16,10 +16,11 @@
     position: relative;
     display: block;
     height: 70px;
+    border: 1px solid transparent;
     background-color: @bg-light;
     &:hover {
-      background-color: #fff;
-      transition: .3s;
+      border: 1px solid @main-color-light;
+      transition: border .3s;
       text-decoration: none;
     }
     > * {

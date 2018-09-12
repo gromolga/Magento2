@@ -12,16 +12,111 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    &:first-of-type {
+    transform: translate(0, -50%);
+    &:nth-of-type(1) {
       left: 15px;
       right: auto;
-      transform: translate(0, -50%);
     }
-    &:last-of-type {
+    &:nth-of-type(2) {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:nth-of-type(3) {
       left: auto;
       right: 15px;
-      transform: translate(0, -50%);
+    }
+  }
+  &_dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 200;
+    transform: translateX(-100%);
+    padding: 0 30px;
+    width: 400px;
+    max-width: calc(~'100% - 30px');
+    box-sizing: border-box;
+    text-align: left;
+    background-color: #fff;
+    &__show {
+      transform: translateX(0);
+      transition: .5s;
+    }
+    &__hide {
+      transform: translateX(-100%);
+      transition: .5s;
+    }
+  }
+  &_dropdown-header {
+    padding: 30px 20px 20px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: @main-text-color;
+  }
+  &_dropdown-list {
+    padding: 0;
+  }
+  &_dropdown-item {
+    margin: 0;
+    list-style-type: none;
+  }
+  &_dropdown-link {
+    display: block;
+    padding: 8px 20px;
+    text-align: left;
+    color: @main-text-color !important;
+    &:hover {
+      text-decoration: none;
+    }
+    &__premium {
+      color: @main-text-color-hover !important;
+      border-left: 3px solid @main-text-color-hover;
+    }
+    &__bold {
+      padding: 15px 20px;
+      font-weight: bold;
+    }
+  }
+  &_dropdown-more {
+    display: block;
+    position: relative;
+    padding: 8px 20px;
+    color: @main-text-color;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      height: 6px;
+      width: 6px;
+      border-top: 1px solid @main-color-hover;
+      border-right: 1px solid @main-color-hover;
+      transform: rotate(45deg);
+    }
+  }
+  &_close {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    box-sizing: border-box;
+    background-color: #9c8f8a;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 35px;
+      left: 5px;
+      width: 20px;
+      height: 2px;
+      background-color: @main-text-color-hover;
+    }
+    &:before {
+      transform: translate(0, 0) rotate(45deg);
+    }
+    &:after {
+      transform: translate(0, 0) rotate(-45deg);
     }
   }
 }
