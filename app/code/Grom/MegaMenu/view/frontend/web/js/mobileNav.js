@@ -18,14 +18,11 @@ define([
             $('.mobile-nav_dropdown').removeClass('mobile-nav_dropdown__show');
             $('body').removeClass('body-overflow')
         });
-    }
-
-    return function (config, element) {
-        $('.mega-menu-link').hover(function () {
-            $(".mega-menu-link").next().find(".mega-menu_list").css('display', 'flex');
-        }, function () {
-            $(".mega-menu-link").next().find(".mega-menu_list").css('display', 'none');
+        $('[data-action=show-mobile-dropdown_second-level]').click(function () {
+            $(this).next('.mobile-nav_dropdown__second-level').addClass('mobile-nav_dropdown__second-level-show');
+        });
+        $('[data-action=hide-mobile-dropdown_second-level]').click(function () {
+            $('.mobile-nav_dropdown__second-level').removeClass('mobile-nav_dropdown__second-level-show');
         });
     }
-
 });
