@@ -8,15 +8,54 @@
     <head>
         <css src="Grom_Theme/css/source/fontawesome.css"/>
         <css src="Grom_Theme/css/all.css"/>
+        <css src="Grom_Slider/css/owl.carousel.min.css"/>
+        <css src="Grom_Slider/css/owl.theme.default.min.css"/>
     </head>
     <body>
+
+        <referenceBlock name="navigation.sections" remove="true"/>
+
+        <referenceContainer name="header.container">
+            <container name="grom_header_line" htmlTag="div" htmlClass="header-top-line">
+                <container name="grom_header_line_container" htmlTag="div" htmlClass="container">
+                    <container name="grom_header_line_content" htmlTag="div" htmlClass="header-top-line_content">
+                        <container name="grom_header_line_left" htmlTag="div" htmlClass="header-top-line_left">
+                            <block name="grom_top_line_contacts"
+                                   template="Grom_Theme::top_line/contacts.phtml"/>
+                        </container>
+                        <container name="grom_header_line_center" htmlTag="div" htmlClass="header-top-line_center">
+                            <block class="Magento\Cms\Block\Block" name="static-page-links" after="-">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">static-page-links</argument>
+                                </arguments>
+                            </block>
+                            <block name="grom_header_additional" template="Grom_Theme::additional_links/default.phtml">
+                                <block class="Magento\Cms\Block\Block" name="page-links-more" after="-">
+                                    <arguments>
+                                        <argument name="block_id" xsi:type="string">page-links-more</argument>
+                                    </arguments>
+                                </block>
+                            </block>
+                        </container>
+                        <container name="grom_header_line_right" htmlTag="div" htmlClass="header-top-line_right">
+
+                        </container>
+                    </container>
+                </container>
+            </container>
+            <block name="grom_navbar"
+                   template="Grom_Theme::navbar/default.phtml"
+                   after="-"/>
+        </referenceContainer>
+
+        <move element="top.search" destination="grom_navbar" as="search"/>
+
         <referenceContainer name="content">
             <block class="Magento\Cms\Block\Block" name="features-list" after="-">
                 <arguments>
                     <argument name="block_id" xsi:type="string">features-list</argument>
                 </arguments>
             </block>
-            <!--<block name="contact-forms" before="-" template="Grom_Theme::contact_forms/default.phtml"/>-->
         </referenceContainer>
     </body>
 </page>

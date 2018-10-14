@@ -3,8 +3,9 @@
   &__top-level {
     display: block;
     margin: 0;
-    padding: 10px 35px;
-    background-color: @bg-light;
+    padding: 11px 35px;
+    //background-color: @bg-light;
+    background-color: rosybrown;
     transition: .3s;
     &:hover {
       background-color: #fff;
@@ -12,10 +13,20 @@
       text-decoration: none;
     }
   }
+  &:first-child {
+    .mega-menu-link__top-level {
+      padding-top: 30px;
+    }
+  }
+  &:last-child {
+    .mega-menu-link__top-level {
+      padding-bottom: 30px;
+    }
+  }
   &__insert-level {
     position: relative;
     display: block;
-    height: 70px;
+    height: 75px;
     border: 1px solid transparent;
     background-color: @bg-light;
     &:hover {
@@ -41,4 +52,42 @@
     top: 50%;
     transform: translateY(-50%);
   }
+}
+@media screen and (max-width: 1280px) {
+  .mega-menu-link {
+    &__top-level {
+      padding: 10px 35px;
+    }
+  }
+}
+@media screen and (max-width: 1220px) {
+  .mega-menu-link {
+    &__top-level {
+      padding: 9px 35px;
+    }
+  }
+}
+@media screen and (max-width: 1175px) {
+  .mega-menu-link {
+    &__top-level {
+      padding: 8px 35px;
+    }
+  }
+}
+@media screen and (max-width: 1125px) {
+  .mega-menu-link {
+    &__top-level {
+      padding: 7px 35px;
+    }
+  }
+}
+@media screen and (max-width: 1080px) {
+  .mega-menu-link {
+    &__top-level {
+      padding: 5px 35px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+
 }

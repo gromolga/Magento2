@@ -5,7 +5,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 0;
+    left: 300px;
     right: 0;
   }
   .owl-nav button.owl-prev,
@@ -74,9 +74,16 @@
     }
   }
 }
-@media screen and (max-width: 767px) {
-  body {
-
+.slider-right {
+  padding-left: 300px;
+  width: calc(~'100% - 300px');
+}
+@media screen and (max-width: 992px) {
+  .slider-right {
+    padding-left: 0;
+    width: auto;
+    .owl-nav {
+      left: 0;
+    }
   }
-
 }

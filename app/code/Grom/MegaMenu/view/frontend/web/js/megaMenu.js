@@ -17,5 +17,10 @@ define([
                 $(element).find('.mega-menu_holder').addClass('mega-menu_holder-page__slideUp');
             });
         }
+        $('[data-action=show-mega-menu_horisontal]').hover(function () {
+            $(this).addClass('mega-menu_holder__show-horisontal');
+        }, function () {
+            $(this).removeClass('mega-menu_holder__show-horisontal');
+        });
     }
 });

@@ -1,0 +1,38 @@
+<?php
+/**
+ * @author Grom Olga <GromOlga.work@gmail.com>
+ */
+?>
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ */
+?>
+<div class="container navbar">
+    <div class="navbar_item navbar_item__left navbar_item__hover navbar_item__bg-darkness" data-action="show-mega-menu_holder">
+        <div class="navbar_item__uppercase">
+            <a class="navbar_item-link" href="#">
+                <span class="icon icon__bg-burger"></span>
+                <span class="navbar_item__uppercase-label">Каталог товаров</span>
+            </a>
+        </div>
+    </div>
+    <div class="navbar_item navbar_item__large">
+        <div class="navbar_item-search-holder">
+            <?php echo $block->getChildHtml("search") ?>
+<!--            <input class="navbar_item-search-input" type="search" placeholder="Поиск товаров">-->
+        </div>
+    </div>
+    <div class="navbar_item navbar_item__hover navbar_item__small">
+        <a class="navbar_item-link" href="#">
+            <span class="icon icon__bg-filters"></span>
+            <span>Подбор товаров</span>
+        </a>
+    </div>
+    <div class="navbar_item navbar_item__hover navbar_item__bg-darkness navbar_item__small">
+        <a class="navbar_item-link" href="#">
+            <span class="icon icon__bg-cart"></span>
+            <span>Корзина пуста</span>
+        </a>
+    </div>
+</div>

@@ -9,7 +9,10 @@
         <referenceContainer name="header.container">
             <block name="grom_mega_menu"
                    template="Grom_MegaMenu::mega_menu.phtml"
-                   after="-"/>
+                   after="grom_navbar"/>
+            <block name="grom_mobile_mega_menu"
+                   template="Grom_MegaMenu::mobile_mega_menu.phtml"
+                   after="grom_mega_menu"/>
         </referenceContainer>
     </body>
 </page>

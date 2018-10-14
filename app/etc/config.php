@@ -6,6 +6,7 @@ return [
         'Magento_Eav' => 1,
         'Magento_Backend' => 1,
         'Grom_Theme' => 1,
+        'Grom_Customer' => 1,
         'Grom_EmailConfirm' => 1,
         'Grom_MegaMenu' => 1,
         'Grom_Slider' => 1,

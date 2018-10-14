@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @author Grom Olga <GromOlga.work@gmail.com>
+ */
+-->
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="grom_slider" class="Grom\Slider\Block\Widget\Slider">
+        <label translate="true">Main Slider</label>
+        <description translate="true">Main Slider (Home Page Banner)</description>
+    </widget>
+</widgets>

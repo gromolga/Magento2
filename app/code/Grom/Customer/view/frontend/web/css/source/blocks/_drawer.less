@@ -1,0 +1,53 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 400px;
+  transition: .5s;
+  background-color: #fff;
+  box-shadow: 0 3px 5px 1px #ccc;
+  &_header {
+    padding: 30px 40px;
+    text-align: center;
+    border-bottom: 1px solid @light-grey;
+  }
+  &_close {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+    height: 20px;
+    width: 20px;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 20px;
+      height: 2px;
+      background-color: #a81206;
+    }
+    &:before {
+      transform: translate(0, 0) rotate(45deg);
+    }
+    &:after {
+      transform: translate(0, 0) rotate(-45deg);
+    }
+  }
+  &_content {
+    padding: 30px 40px;
+  }
+  &_actions {
+    padding: 30px 40px;
+    text-align: center;
+    font-size: 24px;
+    background-color: @bg-light;
+  }
+  &__show {
+    right: 0;
+    transition: .5s;
+  }
+}

@@ -1,0 +1,16 @@
+<?php
+/**
+ * @author Grom Olga <GromOlga.work@gmail.com>
+ */
+?>
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ */
+$viewModel = $block->getViewModel();
+?>
+<?php if($viewModel instanceof \Grom\UpButton\Block\ViewModel\UpButton): ?>
+<div class="up-btn up-btn_hide"
+     style="background-color: <?php echo $viewModel->getBackgroundColor() ?>"
+     data-mage-init='{"upButton": {}}'></div>
+<?php endif ?>

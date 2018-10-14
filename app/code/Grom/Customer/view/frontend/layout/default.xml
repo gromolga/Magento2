@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Grom Olga <GromOlga.work@gmail.com>
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+
+    </head>
+    <body>
+
+        <!--<referenceBlock name="navigation.sections" remove="true"/>-->
+
+        <!--<move element="top.search" destination="grom_navbar" as="search"/>-->
+
+        <referenceContainer name="grom_header_line_right">
+            <block name="grom_login_btn" template="Grom_Customer::login_btn.phtml" />
+        </referenceContainer>
+
+        <referenceContainer name="page.wrapper">
+            <block name="grom_login" template="Grom_Customer::login.phtml" />
+        </referenceContainer>
+
+
+    </body>
+</page>
