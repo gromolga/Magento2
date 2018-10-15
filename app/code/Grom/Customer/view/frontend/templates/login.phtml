@@ -1,0 +1,50 @@
+<?php
+/**
+ * @author Grom Olga <GromOlga.work@gmail.com>
+ */
+?>
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ */
+?>
+
+<div class="drawer">
+    <div class="drawer_header">
+        <div class="drawer_close" data-action="drawer_btn-close"></div>
+        <h2 class="h2">Вход в аккаунт</h2>
+        <div class="drawer_social">
+            <p>Войти с помощью соцсети:</p>
+            <ul class="social-list">
+                <li class="social-list_item">
+                    <a href="#" class="social-list_link fab fa-facebook-square social-list__facebook">
+                        <span class="social-list_seo">Facebook</span>
+                    </a>
+                </li>
+                <li class="social-list_item">
+                    <a href="#" class="social-list_link fab fa-google-plus-square social-list__google-plus">
+                        <span class="social-list_seo">Google plus</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="drawer_content">
+        <div class="form-base">
+            <form>
+                <input class="form-base_input" type="email" placeholder="Email">
+                <input class="form-base_input" type="password" placeholder="Пароль">
+                <input class="button button__bright" type="submit" value="Войти">
+                <label class="form-base_agree">
+                    <input class="form-base_checkbox" type="checkbox" checked>
+                    <span class="form-base_checkbox-txt">Оставаться в системе</span>
+                </label>
+            </form>
+        </div>
+    </div>
+    <div class="drawer_actions">
+        <p>Нет аккаунта?</p>
+        <input class="button button__light" type="submit" value="Регистрация">
+    </div>
+</div>
+
